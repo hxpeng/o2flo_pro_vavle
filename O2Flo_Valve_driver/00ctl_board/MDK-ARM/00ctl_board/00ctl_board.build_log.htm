@@ -1,0 +1,194 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Peng MuXi, Peng, LIC=3UUII-T5434-WJM6K-ZXUZ6-UPX17-0SZRC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DARMCM1.DLL V1.19.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.29.0
+Dialog DLL:      TARMCM1.DLL V1.14.0.0
+ 
+<h2>Project:</h2>
+C:\software\o2floPro_valve_driver\O2Flo_Valve_driver\00ctl_board\MDK-ARM\00ctl_board.uvprojx
+Project File Date:  09/11/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target '00ctl_board'
+assembling startup_stm32f030x8.s...
+compiling freertos.c...
+compiling main.c...
+compiling stm32f0xx_it.c...
+compiling stm32f0xx_hal_msp.c...
+compiling stm32f0xx_hal_adc_ex.c...
+compiling stm32f0xx_hal_adc.c...
+compiling stm32f0xx_hal_spi_ex.c...
+compiling stm32f0xx_hal_spi.c...
+compiling stm32f0xx_hal_tim.c...
+compiling stm32f0xx_hal_tim_ex.c...
+compiling stm32f0xx_hal_uart.c...
+compiling stm32f0xx_hal_uart_ex.c...
+compiling stm32f0xx_hal_rcc.c...
+compiling stm32f0xx_hal_rcc_ex.c...
+compiling stm32f0xx_hal.c...
+compiling stm32f0xx_hal_i2c_ex.c...
+compiling stm32f0xx_hal_i2c.c...
+compiling stm32f0xx_hal_gpio.c...
+compiling stm32f0xx_hal_dma.c...
+compiling stm32f0xx_hal_cortex.c...
+compiling stm32f0xx_hal_pwr.c...
+compiling stm32f0xx_hal_pwr_ex.c...
+compiling stm32f0xx_hal_flash.c...
+compiling stm32f0xx_hal_flash_ex.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling list.c...
+compiling system_stm32f0xx.c...
+compiling queue.c...
+compiling timers.c...
+compiling tasks.c...
+compiling heap_4.c...
+compiling cmsis_os.c...
+compiling port.c...
+compiling app.c...
+../source/module/flow_module.h(59): warning:  #1295-D: Deprecated declaration set_flow - give arg types
+  void set_flow();
+..\source\APP\app.c: 1 warning, 0 errors
+compiling comm_module.c...
+..\source\Module\comm_module.c(627): warning:  #177-D: variable "len"  was declared but never referenced
+  			uint16_t len=snd_buffer[INDEX_LEN]+2;
+..\source\Module\comm_module.c(691): warning:  #940-D: missing return statement at end of non-void function "SaveDataTo" 
+  }
+..\source\Module\comm_module.c: 2 warnings, 0 errors
+compiling flow_module.c...
+..\source\Module\flow_module.h(59): warning:  #1295-D: Deprecated declaration set_flow - give arg types
+  void set_flow();
+..\source\Module\flow_module.c(596): warning:  #177-D: variable "freq_cnt"  was declared but never referenced
+  	static uint8_t freq_cnt=0;
+..\source\Module\flow_module.c(599): warning:  #177-D: variable "index"  was declared but never referenced
+  	static int index=0;
+..\source\Module\flow_module.c(600): warning:  #177-D: variable "freq_1_cnt"  was declared but never referenced
+  	static int freq_1_cnt=0;   //主频
+..\source\Module\flow_module.c(601): warning:  #177-D: variable "freq_2_cnt"  was declared but never referenced
+  	static int freq_2_cnt=0;   //辅助频率
+..\source\Module\flow_module.c(43): warning:  #550-D: variable "duration_cnt"  was set but never used
+  static u32t duration_cnt = 0;
+..\source\Module\flow_module.c(45): warning:  #550-D: variable "pwm_value"  was set but never used
+  static int pwm_value=0;
+..\source\Module\flow_module.c(219): warning:  #550-D: variable "end_flow"  was set but never used
+  static u16 end_flow=0;
+..\source\Module\flow_module.c(220): warning:  #550-D: variable "step"  was set but never used
+  static u16 step=0;
+..\source\Module\flow_module.c(221): warning:  #550-D: variable "duration"  was set but never used
+  static u16 duration=0;
+..\source\Module\flow_module.c(222): warning:  #550-D: variable "Is_only_set_flow"  was set but never used
+  static u8 Is_only_set_flow=0;
+..\source\Module\flow_module.c: 11 warnings, 0 errors
+compiling interface_module.c...
+compiling sampling_module.c...
+..\source\Module\sampling_module.c(321): warning:  #177-D: variable "flow_err_cnt"  was declared but never referenced
+  	static u16 flow_err_cnt = 0;
+..\source\Module\sampling_module.c(417): warning:  #188-D: enumerated type mixed with another type
+  		SF05_SetMeasurement(FLOW_CH,module->sensor_type);
+..\source\Module\sampling_module.c(409): warning:  #177-D: variable "flow_sum"  was declared but never referenced
+  	u32 flow_sum = 0;
+..\source\Module\sampling_module.c(411): warning:  #177-D: variable "cnt"  was declared but never referenced
+  	u8 cnt;
+..\source\Module\sampling_module.c(489): warning:  #940-D: missing return statement at end of non-void function "Plate_Neb_Temp" 
+  }
+..\source\Module\sampling_module.c: 5 warnings, 0 errors
+compiling sf05.c...
+..\source\BSP\sf05.c(273): warning:  #550-D: variable "currentCommand"  was set but never used
+    u16t    currentCommand;
+..\source\BSP\sf05.c(274): warning:  #177-D: variable "maxRetries"  was declared but never referenced
+  	u8t 		maxRetries = 20;
+..\source\BSP\sf05.c(301): warning:  #550-D: variable "currentCommand"  was set but never used
+    u16t    currentCommand;
+..\source\BSP\sf05.c: 3 warnings, 0 errors
+compiling comm_task.c...
+..\source\Module\flow_module.h(59): warning:  #1295-D: Deprecated declaration set_flow - give arg types
+  void set_flow();
+..\source\Module\comm_task.c(59): warning:  #1295-D: Deprecated declaration send_valve_data_2_PC - give arg types
+  void send_valve_data_2_PC();
+..\source\Module\comm_task.c(523): warning:  #177-D: variable "re_delay"  was declared but never referenced
+  	u16 re_delay = 0;
+..\source\Module\comm_task.c(524): warning:  #177-D: variable "tx_len"  was declared but never referenced
+  	u16 tx_len;
+..\source\Module\comm_task.c(525): warning:  #177-D: variable "com2_txbuffer"  was declared but never referenced
+  	u8 com2_txbuffer[TX_FIFO_LEN];
+..\source\Module\comm_task.c(532): warning:  #177-D: variable "step"  was declared but never referenced
+  	uint8_t step=5;
+..\source\Module\comm_task.c(21): warning:  #177-D: variable "_com2_CmdReceive"  was declared but never referenced
+  static CMD_Receive _com2_CmdReceive;  // 命令接收控制对象
+..\source\Module\comm_task.c(25): warning:  #177-D: variable "_com2_fifo_buffer"  was declared but never referenced
+  static UINT8 _com2_fifo_buffer[TX_FIFO_LEN];
+..\source\Module\comm_task.c(34): warning:  #177-D: function "ModuleUnPackFrame"  was declared but never referenced
+  static BOOL ModuleUnPackFrame(void);
+..\source\Module\comm_task.c(35): warning:  #177-D: function "ModuleProcessPacket"  was declared but never referenced
+  static BOOL ModuleProcessPacket(UINT8 *pData);
+..\source\Module\comm_task.c: 10 warnings, 0 errors
+compiling bsp_spi_flash.c...
+..\source\BSP\bsp_spi_flash.c(72): warning:  #223-D: function "interface_module_spi_write_byte" declared implicitly
+  	interface_module_spi_write_byte(_ucByte);
+..\source\BSP\bsp_spi_flash.c(87): warning:  #223-D: function "interface_module_spi_read_byte" declared implicitly
+  	interface_module_spi_read_byte(&_ucByte);
+..\source\BSP\bsp_spi_flash.c: 2 warnings, 0 errors
+compiling common.c...
+..\source\System\common\common.c(147): warning:  #177-D: variable "sum"  was declared but never referenced
+  	int sum = 0;
+..\source\System\common\common.c: 1 warning, 0 errors
+compiling fifo.c...
+compiling CMD_Receive.c...
+compiling i2c_hal.c...
+..\source\BSP\i2c_hal.c(92): warning:  #550-D: variable "flag"  was set but never used
+  	static u8 flag = 0;
+..\source\BSP\i2c_hal.c: 1 warning, 0 errors
+compiling pid.c...
+..\source\System\pid\pid.c(36): warning:  #177-D: variable "ThisIncVal"  was declared but never referenced
+  	long ThisIncVal, pIncVal, iIncVal, dIncVal; 
+..\source\System\pid\pid.c(37): warning:  #177-D: variable "err_limit_val"  was declared but never referenced
+  	int err_limit_val = 0;
+..\source\System\pid\pid.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=21848 RO-data=3380 RW-data=260 ZI-data=7348  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output C:\software\o2floPro_valve_driver\O2Flo_Valve_driver\00ctl_board\MDK-ARM\00ctl_board\00ctl_board.bin C:\software\o2floPro_valve_driver\O2Flo_Valve_driver\00ctl_board\MDK-ARM\00ctl_board\00ctl_board.axf
+".\00ctl_board\00ctl_board.axf" - 0 Error(s), 38 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.0.0.pack
+                Keil.STM32F0xx_DFP.2.0.0
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_00ctl_board
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:24
+</pre>
+</body>
+</html>
